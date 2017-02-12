@@ -1,0 +1,212 @@
+@import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono);
+@import "compass/reset";
+@import "mixins";
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Inconsolata');
+
+$color-dark: #000;
+$content-max-width: 1200px;
+$font: 'Inconsolata', monospace;
+
+html, body {
+	height:  100%;
+}
+
+#header {
+	height: 100%;
+	background-image: url("../../img/tumblr_ob9c8229Xk1s4fz4bo1_500.gif");
+}
+
+p.glitch-text {
+	margin: 0 auto;
+	position: relative;
+	max-width: 1200px;
+	height: 120px;
+	font-size: 24px;
+	margin-top: -100px;
+	@include textGlitch("glitch-text", 15, white, $color-dark, red, blue, 1200, 120);
+}
+
+
+#believe p {
+		font-size: 60px;
+		text-align: center;
+		letter-spacing: 30px;
+		font-family: $font;
+		color: #fff;
+	    padding-top: 20%;
+}
+
+h1 {
+	font-size: 44px;
+	font-family: $font;
+	letter-spacing: 22px;
+	margin-top: 50px;
+	color: $color-dark;
+	margin-left: 30px;
+    padding:5px 15px;
+    display: inline-block;
+    position: relative;
+    
+}
+
+h1 .line {
+	content: " ";
+	height: 5px;
+	background-color: black;
+	width: 0%;
+	position: absolute;
+	bottom: -20px;
+	left: -100px;
+}
+
+/*
+
+FOR AN EMPTY DIV 
+
+.lines {
+    width: 68%;
+	background-image: url(img/lines.png);
+    height: 10px;
+    background-size: 10%;
+    margin-left: 45px;
+    margin-top: 20px;
+}*/
+
+#wrapper1  {
+	margin: 0 auto;
+	background-image: url("../../img/dot.png");
+	background-attachment: fixed;
+}
+
+.content-wrapper {
+	max-width: $content-max-width;
+	margin: 0 auto;
+}
+
+.flex-wrap1 {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 100px;
+	
+}
+
+.img-wrapper {
+	position: relative;
+	width: 330px;
+}
+
+.img-wrapper2 {
+	position: relative;
+	width: 500px;
+}
+
+.img-wrapper img {
+	width: 100%;
+}
+
+.img-container {
+	position: relative;
+}
+
+
+#caption {
+	font-family: $font;
+	letter-spacing: 1px;
+	background-color: rgba(0,0,0,0.9);
+	color: white;
+	position: absolute;
+	bottom: 20px;
+	right: -10px;
+	padding: 7px;
+}
+
+#caption2 {
+	font-family: $font;
+	letter-spacing: 1px;
+	font-size: 18px;
+	background-color: $color-dark;
+	opacity: 0.9;
+	color: white;
+	position: absolute;
+	bottom: 20px;
+	right: -30px;
+	left: 30px;
+
+}
+
+#caption3 {
+	font-family: $font;
+	letter-spacing: 1px;
+	font-size: 18px;
+	background-color: $color-dark;
+	opacity: 0.9;
+	color: white;
+	position: absolute;
+	top: 20px;
+	right: -30px;
+	left: 30px;
+
+}
+
+
+.divider1 {
+	height: 100px;
+}
+
+.divider {
+	height: 200px;
+}
+
+
+.absolute {
+	position: absolute;
+	left: 10%;
+	top: 25%;
+}
+
+.absolute2 {
+	position: absolute;
+	top: 60%;
+	left: 45%;
+}
+
+.absolute3 {
+	position: absolute;
+	top: 45%;
+	left: 75%;
+}
+
+#wrapper3 {
+    background-color: $color-dark;
+    height: 100%;
+    display: flex;
+	align-items: center;
+	flex-direction: row;
+	position: relative;
+
+}
+
+#wrapper3:after {
+	content: " ";
+	height: 100%;
+    background-image: url("../../img/lines3.png");
+	width: 100%;
+	background-size: 6%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+.contentwrap {
+    max-width: 90%;
+    margin:0 auto;
+    padding: 20px 0;
+}
+
+.p {
+	font-family: $font;
+	font-size: 14px;
+	letter-spacing: 0.25em;
+    color: white;
+}
