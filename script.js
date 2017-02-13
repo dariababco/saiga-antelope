@@ -32,7 +32,7 @@ window.addEventListener("scroll", function(event)
             var line = lines[i];
             var offset = getOffsetSum(line);
             var startPositionY = offset.top - window.innerHeight;
-            var endPositionY = startPositionY + 480;
+            var endPositionY = startPositionY + 580;
             var progressY = (scrollY - startPositionY) / (endPositionY - startPositionY);
             if (progressY < 0) { progressY = 0;}
             if (progressY > 1) { progressY = 1;}

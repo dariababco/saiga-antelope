@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Inconsolata');
 
 $color-dark: #000;
-$content-max-width: 1200px;
+$content-max-width: 90%;
 $font: 'Inconsolata', monospace;
 
 html, body {
@@ -79,7 +79,7 @@ FOR AN EMPTY DIV
 }
 
 .content-wrapper {
-	max-width: $content-max-width;
+	/*max-width: $content-max-width;*/
 	margin: 0 auto;
 }
 
@@ -92,7 +92,7 @@ FOR AN EMPTY DIV
 
 .img-wrapper {
 	position: relative;
-	width: 330px;
+	width: 400px;
 }
 
 .img-wrapper2 {
@@ -189,9 +189,8 @@ FOR AN EMPTY DIV
 #wrapper3:after {
 	content: " ";
 	height: 100%;
-    background-image: url("../../img/lines3.png");
+    background-image: url("../../img/lines4.png");
 	width: 100%;
-	background-size: 6%;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -209,4 +208,63 @@ FOR AN EMPTY DIV
 	font-size: 14px;
 	letter-spacing: 0.25em;
     color: white;
+}
+
+
+@media only screen and (min-width: 900px) and (max-width: 1320px) {
+
+	.img-wrapper {
+
+		width: 330px;
+	}
+
+	.img-wrapper2 #caption2, .img-wrapper2 #caption3 {
+	font-size: 14px;
+	right:15px;
+} 
+
+}
+
+@media only screen and (max-width: 900px) {
+
+	.img-wrapper {
+		margin-bottom: 50px; 
+		width: 500px;
+	}
+
+	.flex-wrap1 {
+		flex-wrap: wrap;
+	}
+
+.absolute {
+	position: absolute;
+	left: 5%;
+	top: 25%;
+}
+
+.absolute2 {
+	position: absolute;
+	top: 60%;
+	left: 25%;
+}
+
+.absolute3 {
+	position: absolute;
+	top: 35%;
+	left: 75%;
+}
+
+.absolute img, .absolute2 img, .absolute3 img {
+	width: 60%;
+}
+
+#believe p {
+	font-size: 50px;
+}
+
+.img-wrapper2 #caption2, .img-wrapper2 #caption3 {
+	font-size: 14px;
+	right:15px;
+} 
+
 }
