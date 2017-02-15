@@ -9,17 +9,19 @@ $font: 'Inconsolata', monospace;
 
 html, body {
 	height:  100%;
+	width: 100%;
 }
 
 #header {
 	height: 100%;
+	width: 100%;
 	background-image: url("../../img/tumblr_ob9c8229Xk1s4fz4bo1_500.gif");
 }
 
 p.glitch-text {
 	margin: 0 auto;
 	position: relative;
-	max-width: 1200px;
+	max-width: $content-max-width;
 	height: 120px;
 	font-size: 24px;
 	margin-top: -100px;
@@ -37,9 +39,9 @@ p.glitch-text {
 }
 
 h1 {
-	font-size: 44px;
+	font-size: 3rem;
+	letter-spacing: 1.5rem;
 	font-family: $font;
-	letter-spacing: 22px;
 	margin-top: 50px;
 	color: $color-dark;
 	margin-left: 30px;
@@ -97,7 +99,12 @@ FOR AN EMPTY DIV
 
 .img-wrapper2 {
 	position: relative;
-	width: 500px;
+		width: 45%;
+}
+
+.img-wrapper2 img {
+	position: relative;
+		width: 90%;
 }
 
 .img-wrapper img {
@@ -215,17 +222,18 @@ FOR AN EMPTY DIV
 
 	.img-wrapper {
 
-		width: 330px;
+		width: 30%;
 	}
+
 
 	.img-wrapper2 #caption2, .img-wrapper2 #caption3 {
 	font-size: 14px;
-	right:15px;
+	right:60px;
 } 
 
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 700px) and (max-width: 900px) {
 
 	.img-wrapper {
 		margin-bottom: 50px; 
@@ -266,5 +274,82 @@ FOR AN EMPTY DIV
 	font-size: 14px;
 	right:15px;
 } 
+
+.img-wrapper2 {
+	width: 90%;
+}
+
+
+
+
+}
+
+@media only screen and (max-width: 700px) {
+
+	.img-wrapper {
+		margin-bottom: 50px; 
+		width: 90%;
+	}
+
+	.flex-wrap1 {
+		flex-wrap: wrap;
+		padding: 0;
+	}
+
+.absolute {
+	position: absolute;
+	left: 5%;
+	top: 25%;
+}
+
+.absolute2 {
+	position: absolute;
+	top: 60%;
+	left: 25%;
+}
+
+.absolute3 {
+	position: absolute;
+	top: 35%;
+	left: 75%;
+}
+
+.absolute img, .absolute2 img, .absolute3 img {
+	width: 60%;
+}
+
+#believe p {
+	font-size: 2rem;
+}
+
+.img-wrapper2 #caption2, .img-wrapper2 #caption3 {
+	font-size: 14px;
+	right:15px;
+} 
+
+.img-wrapper2 {
+	width: 90%;
+}
+
+
+h1 {
+	font-size: 1.5rem;
+	letter-spacing: 0.5rem;
+}
+
+.p {
+	font-family: $font;
+	font-size: 10px;
+	letter-spacing: 1px;
+    color: white;
+}
+
+.divider {
+	height: 50px;
+}
+
+.divider2 {
+	height: 25px;
+}
 
 }
