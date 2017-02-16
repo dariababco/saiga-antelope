@@ -36,6 +36,7 @@ p.glitch-text {
 		font-family: $font;
 		color: #fff;
 	    padding-top: 20%;
+	    line-height: 1.8;
 }
 
 h1 {
@@ -216,6 +217,10 @@ FOR AN EMPTY DIV
 	letter-spacing: 0.25em;
     color: white;
 }
+.img-captionwrapper {
+	position: relative;
+}
+
 
 
 @media only screen and (min-width: 900px) and (max-width: 1320px) {
@@ -350,6 +355,10 @@ h1 {
 
 .divider2 {
 	height: 25px;
+}
+
+h1 .line {
+	height: 2px;
 }
 
 }
